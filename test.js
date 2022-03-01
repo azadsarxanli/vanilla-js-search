@@ -17,10 +17,10 @@ inputv.addEventListener("keyup", (e) => {
       const result = responseTxt.filter((item) =>
         item.Name.toLowerCase().includes(string.toLowerCase())
       );
-      console.log(result);
+      console.log(result, "result");
       container.innerHTML = "";
-      console.log(responseTxt.length);
-      if (responseTxt.length > 0) {
+      console.log(responseTxt.length, "responsetxt");
+      if (result.length > 0) {
         result.map(function (element) {
           //ma series
           const detailsName = element.Name.split(" ").join("_");
@@ -36,6 +36,7 @@ inputv.addEventListener("keyup", (e) => {
             container.innerHTML = `
           <div class="not-found">daxil etdiyiniz kelime tapilmadi.</div>
         `;
+            console.log("birtinci elsededir");
           }
         });
       } else {
