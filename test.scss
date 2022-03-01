@@ -1,0 +1,106 @@
+.modal-input-wrapper {
+  /* width: 82%;
+      margin: 0 auto;
+      height: 92vh;
+    
+      background-color: #fafafa; */
+  width: 50%;
+  margin: 10rem auto 0;
+  /* padding: 0rem 1rem; */
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fafafa;
+}
+
+.modal-input:focus {
+  outline: none;
+}
+.modal-input:focus::placeholder {
+  color: transparent;
+}
+
+.table-data {
+  /* width: 500px;
+      margin: 1rem auto;
+      box-shadow: 0 5px 5px -5px var(--stroke-gray),
+        -5px 0 5px -5px var(--stroke-gray), 5px 0 5px -5px var(--stroke-gray);
+      display: none; */
+  padding: 0;
+  width: 100%;
+  /* padding: 1rem; */
+  /* box-shadow: 0px 2px 6px #d8d8d833; */
+  /* background-color: white; */
+  display: none;
+  /* padding: 1px 2px; */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.table-data::-webkit-scrollbar {
+  display: none;
+}
+.table-data tbody {
+  width: 100%;
+  display: block;
+}
+
+.table-data.active {
+  display: block;
+}
+
+.table-data tr img {
+  height: 50px;
+  width: 50px;
+  aspect-ratio: 16/9;
+}
+
+.table-data tr {
+  /* width: 600px;
+      height: 50px; */
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+.table-data tr:hover {
+  background-color: var(--darkblue);
+}
+.table-data tr:hover a {
+  color: white;
+}
+.table-data td {
+  display: block;
+  padding: 10px 8px;
+}
+.table-data tr a {
+  width: 100%;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+.product-link {
+  color: var(--main-black) !important;
+}
+
+a {
+  color: black;
+}
+input {
+  padding: 8px;
+}
+.not-found {
+  padding: 8px 10px;
+  background-color: rgb(241, 255, 180);
+  color: #333;
+}
+
+.table-data tr {
+  &:hover {
+    background-color: rgb(50, 85, 180);
+    td {
+      color: white;
+      a {
+        color: white;
+      }
+    }
+  }
+}
